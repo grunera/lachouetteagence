@@ -7,6 +7,7 @@ body {
     -moz-osx-font-smoothing: grayscale;
 }
 
+
 a,
 button {
     transition: all .3s ease-in-out;
@@ -17,6 +18,8 @@ a:hover {
     text-decoration: none;
     cursor: pointer;
 }
+
+
 
 #page-loading-blocs-notifaction {
     position: fixed;
@@ -133,7 +136,7 @@ a:hover {
 .d-bloc h5 a,
 .d-bloc h6 a,
 .d-bloc p a {
-    color: rgba(255, 255, 255, .6);
+    color: rgba(0, 0, 0, .6);
 }
 
 .d-bloc .a-btn:hover,
@@ -283,9 +286,21 @@ a:hover {
     padding-left: 0;
 }
 
+.col-sm-12 text-center a {
+    color: black;
+}
+
 #bloc-1-hero h1 {
     font-size: 32px;
 }
+
+#bloc-5-cta h2 {
+    background-size:cover;
+    background-color:black;
+}
+
+
+
 
 .navbar {
     margin-bottom: 0;
@@ -347,6 +362,7 @@ a:hover {
 }
 
 .navbar-toggle .icon-bar {
+
     background-color: rgba(0, 0, 0, .5);
     width: 26px;
 }
@@ -362,13 +378,6 @@ a:hover {
     z-index: 2;
 }
 
-.text-center hero-bloc-text tc-white h1{
-    color: black;
-}
-
-.text-center mg-lg tc-white tight-width-whitespace p {
-    color: black;
-}
 
 
 @media (min-width: 768px) {
@@ -660,7 +669,7 @@ label,
 a {
     font-family: "helvetica";
     font-weight: 400;
-    color: #575757!important;
+    color: rgb(12, 12, 12)!important;
 }
 
 .container {
@@ -686,7 +695,7 @@ a {
 }
 
 p {
-    font-size: 11px;
+    font-size: 13px;
 }
 
 .tight-width-whitespace {
@@ -701,7 +710,7 @@ p {
 
 .cta-hero {
     margin-top: 22px;
-    color: #FFFFFF!important;
+    color: black;
     text-transform: uppercase;
     padding: 12px 28px 12px 28px;
     font-size: 16px;
@@ -709,8 +718,8 @@ p {
 }
 
 .social {
-    max-width: 400px;
-    margin: auto auto auto auto;
+    max-width: 480px;
+    margin: 20px auto auto auto;
 }
 
 h2 {
@@ -745,9 +754,12 @@ h4 {
 }
 
 .white {
-    color: #FFFFFF!important;
+    color:white!important;
 }
 
+.black {
+    color:black;
+}
 .portfolio-thumb {
     margin-bottom: 24px;
 }
@@ -789,7 +801,7 @@ h4 {
 
 .btn-atomic-tangerine {
     background: #F3976C;
-    color: #FFFFFF!important;
+    color: #333333;
 }
 
 .btn-atomic-tangerine:hover {
@@ -857,13 +869,15 @@ h4 {
     }
 }
 
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
     .b-parallax {
         background-attachment: scroll;
     }
 }
 
-@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
+@media only screen and (min-width: 1024px) and (max-width: 1366px) and (-webkit-min-pixel-ratio: 1.5) {
     .b-parallax {
         background-attachment: scroll;
     }
